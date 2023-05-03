@@ -9,3 +9,5 @@ elif numero1<numero2:
         print("el numero es acendiente")
 else:
     print("los numeros son iguales")
+#el programa realizado fue para evaluar el funcionamiento de ver el resultado de poner dos numeros en pantalla 
+#pedidos por la misma maquina
