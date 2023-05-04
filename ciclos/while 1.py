@@ -10,4 +10,4 @@ else:
     si=si+i
 i=i+1 #i+=1
 print("la suma de los pares es",sp)
-print("la suma de los impares es",si)
+print("la suma de los impares es",si)   

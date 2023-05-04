@@ -1,5 +1,5 @@
 import random
-mediana=0
+
 suma=0
 max=0
 min=1000
@@ -22,4 +22,3 @@ print ("la suma de los numeros es ",suma)
 print("el promedio es",prom)
 print ("el numero maximo es ",max)
 print ("el numero minimo es",min)
-print ("la media es:",mediana)
