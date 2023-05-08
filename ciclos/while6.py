@@ -9,4 +9,4 @@ while nu > 0:
     if nu > ma:
         ma = nu
 
-print("El numero maximo introducido es:", ma)
+print("El numero maximo introducido es:", nu)
