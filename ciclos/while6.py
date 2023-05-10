@@ -4,7 +4,6 @@ nu = 1
 while nu > 0:
     nu = int(input("Introduce un numero:"))
 
-    nu = int(input("Introduce un numero"))
 
     if nu > ma:
         ma = nu
