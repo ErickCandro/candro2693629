@@ -1,6 +1,6 @@
 import random
 ind=0
-def llenarLista(tam:10,rango:100):
+def llenarLista(tam,rango):
     lista=[random.randrange(rango) for i in range(tam)]    
     return lista
 
@@ -28,18 +28,23 @@ def numeroMenor(lista):
     return mini
 
 def menor(lista,tam):
-    for i in range (len(lista)):
-        for j in range(len(lista)-i-1):
-            if lista[i]<lista[j+1]:
-                lista[i], lista[j+1]=lista[j+1], lista[i]
-        return tam 
+    for i in range (tam):
+        for j in range(i+1,tam):
+            if lista[i]<lista[j]:
+                lista[i], lista[j]=lista[j], lista[i]
+        return lista
+    lista=[]
+    lista=menor(l1,10)
     
 def mayor(lista,tam):
-    for i in range (len(lista)):
-        for j in range(len (lista)-i+1):
- #           if lista[i]<lista[j+1]:
-                lista[i], lista[j-1]=lista[j-1], lista[i]
-        return tam   
+    for i in range (tam):
+        for j in range (i+1,tam):
+            if lista[i]>lista[j]:
+                lista[i], lista[j]=lista[j], lista[i]
+        return lista
+    lista=[]
+    lista=mayor(l1,10)   
+    
 def mediana(lista):
     if  (len(lista))%2==0:
         lista=(lista[(len(lista)//2)-1]+lista [len(lista)//2])/2
@@ -64,7 +69,7 @@ print("la suma de los numeros es",sumaLista(l1))
 print("El promedio es ", round(promedioLista(l1),2))
 print("el numero mayor es:",numeroMayor(l1))
 print("el numero menor es:",numeroMenor(l1))
-print("el numero ascendente es",mayor(l1,5))
-print("el numero descendente es",menor(l1,5))
+print("el numero ascendente es",mayor(l1,10))
+print("el numero descendente es",menor(l1,10))
 print("la mediana es:",mediana(l1))
 print("la moda es:",moda(l1))
