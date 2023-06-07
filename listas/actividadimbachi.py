@@ -8,4 +8,4 @@ def nummat(x):
 maximo = int(input("introduce un numero maximo"))
 lista=nummat(-1)
 
-print("El numero natural mas pequeño necesario para superar el maximo es:",lista)              
+print("El numero natural mas pequeño necesario para superar el maximo es:",lista)      
