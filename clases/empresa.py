@@ -22,12 +22,14 @@ class Empresa:
     
     def salarioHora(self):
         horas=float(input("ingrese el monto de horas trabajadas:"))
-        t=self.salario/(30*horas)
+        t=self.__salario/(30*horas)
         return t
-salario=float(input("ingrese el monto de horas trabajadas:"))
-empresa=Empresa (salario)
+    def incrementoIpc(self,ipc):
+        if self.__salario == self.salario:
+            incremento = (ipc + 3) / 100 * self.__salario
+        else:
+            incremento = ipc / 100 * self.__salario
+        return incremento
 
-salarioHora=empresa.salarioHora()
-print ("el empleado gana ",salarioHora,"por hora ")
 
 
