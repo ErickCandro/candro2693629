@@ -1,4 +1,14 @@
-from user import *
-from account import *
-ob1=Cuenta
-print(ob1)
+from user import User
+class clase(User):
+    def __init__(self, nombre, id, nombreclase):
+        super().__init__(nombre, id)
+        self.__nombreclase = nombreclase
+        self.__clases = []
+
+    def adicionarClase(self, claseObj):
+        self.__clases.append(claseObj)
+
+    def setClass(self):
+        claseNombre = input("Ingrese el nombre de la clase: ")
+        objClase = clase(claseNombre)
+        self.__clases.append(objClase)
