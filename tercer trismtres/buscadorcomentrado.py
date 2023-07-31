@@ -1,9 +1,12 @@
 from os import strerror
 
 # Inicializa 26 contadores para cada letra latina.
-# Nota: hemos usado una comprensión para esto.
-counters = {chr(ch): 0 for ch in range(ord('a'), ord('z'),ord(1),ord("") + 1)}
+# Nota: se ah usado una comprensión para esto.
+counters = {chr(ch): 0 for ch in range(ord('a'), ord('z'), + 1)}
+# A continuacion se le pide al usuario que ingrese el nombre del archivo que desea analizar
+# Nota: El nombre del archivo debe escribirce de manera correcta y completa ejemplo"C:\Users\erick\Downloads\Abc123" para que funcione de manera correcta
 file_name = input("Ingresa el nombre del archivo a analizar: ")
+# Se procede a crear una excepcion 
 try:
     file = open(file_name, "rt")
     for line in file:
