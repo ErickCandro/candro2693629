@@ -1,7 +1,4 @@
-
-
 from os import strerror
-
 # Inicializa un diccionario para todos los caracteres que deseas contar, incluyendo letras latinas, símbolos y dígitos.
 counters = {chr(ch): 0 for ch in range(32, 127)}
 file_name = input("Ingresa el nombre del archivo a analizar: ")

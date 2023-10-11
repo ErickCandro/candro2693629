@@ -32,6 +32,7 @@ def numeroMayor(lista):
     return max
 l1=llenarLista(3,10)    
 print(l1)
+print(Ascendente(l1,4))
 print(sumaLista(l1))
 print(round(promedioLista(l1),2))
 print(numeroMayor(l1))
